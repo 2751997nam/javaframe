@@ -1,5 +1,6 @@
 package models;
 
+import models.database.DB;
 import config.Database;
 import java.util.ArrayList;
 import java.util.List;

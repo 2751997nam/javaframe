@@ -14,8 +14,8 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import models.DB;
-import models.MySQLConnect;
+import models.database.DB;
+import models.database.MySQLConnect;
 import models.migrations.migrations.CreateMigrationsTable;
 import models.migrations.migrations.CreateUsersTable;
 

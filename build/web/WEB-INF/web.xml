@@ -3,15 +3,6 @@
     
     <!--                   Controllers                       -->
     <servlet>
-        <servlet-name>LoginController</servlet-name>
-        <servlet-class>controllers.LoginController</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>LoginController</servlet-name>
-        <url-pattern>/LoginController</url-pattern>
-    </servlet-mapping>
-        
-    <servlet>
         <servlet-name>IndexController</servlet-name>
         <servlet-class>controllers.IndexController</servlet-class>
     </servlet>

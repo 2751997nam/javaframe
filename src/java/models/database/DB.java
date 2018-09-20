@@ -1,4 +1,4 @@
-package models;
+package models.database;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

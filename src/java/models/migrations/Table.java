@@ -7,8 +7,8 @@ package models.migrations;
 
 import config.Database;
 import java.util.List;
-import models.DB;
-import models.Query;
+import models.database.DB;
+import models.database.Query;
 
 /**
  *
