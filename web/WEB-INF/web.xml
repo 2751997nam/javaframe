@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <!--                   Controllers                       -->
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>controllers.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+        
+    <servlet>
+        <servlet-name>IndexController</servlet-name>
+        <servlet-class>controllers.IndexController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexController</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>   
+        
+    <!--                      Views                             -->
+    <servlet>
+        <servlet-name>login view</servlet-name>
+        <jsp-file>/WEB-INF/login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login view</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>index view</servlet-name>
+        <jsp-file>/WEB-INF/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index view</servlet-name>
+        <url-pattern>/indexView</url-pattern>
+    </servlet-mapping>
+    
+    <!--                      Sessions                          -->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
