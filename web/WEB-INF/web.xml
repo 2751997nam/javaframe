@@ -13,15 +13,6 @@
         
     <!--                      Views                             -->
     <servlet>
-        <servlet-name>login view</servlet-name>
-        <jsp-file>/WEB-INF/login.jsp</jsp-file>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>login view</servlet-name>
-        <url-pattern>/login</url-pattern>
-    </servlet-mapping>
-    
-    <servlet>
         <servlet-name>index view</servlet-name>
         <jsp-file>/WEB-INF/index.jsp</jsp-file>
     </servlet>
