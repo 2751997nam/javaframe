@@ -1,7 +1,7 @@
 package models;
 
-import models.database.DB;
 import config.Database;
+import models.database.DB;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
@@ -91,8 +91,7 @@ public class User extends Model {
     public List getAllUser(HttpServletRequest request) {
         return new DB("users", "models.User")
                 .orderBy("name")
-                .paginate(
-                        request,
+                .paginate(request,
                         Integer.parseInt(new Database().get("paginate"))
                 ).get();       
     }

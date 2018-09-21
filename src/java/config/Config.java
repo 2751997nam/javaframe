@@ -9,6 +9,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.json.simple.JSONObject;
@@ -32,7 +33,8 @@ public class Config {
     }
 
     public void setPath(String path) {
-        this.path = path;
+        URL url = getClass().getResource(this.path);
+        this.path = url.getPath() + "\\" + path;
     }
     
     

@@ -11,9 +11,8 @@ import java.net.URL;
  *
  * @author ASUS
  */
-public class Database extends Config{
-
-    public Database() {
-        this.setPath("database.json");
+public class MySql extends Config{
+    public MySql() {
+        this.setPath("mysql.json");
     }
 }

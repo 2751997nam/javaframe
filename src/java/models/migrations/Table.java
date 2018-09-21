@@ -5,7 +5,7 @@
  */
 package models.migrations;
 
-import config.Database;
+import config.MySql;
 import java.util.List;
 import models.database.DB;
 import models.database.Query;

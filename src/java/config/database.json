@@ -1,7 +1,3 @@
 {
-    "host": "localhost",
-    "DBName": "mytest",
-    "username": "root",
-    "password": "",
     "paginate": "10"
 }

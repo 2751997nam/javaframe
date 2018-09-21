@@ -1,6 +1,6 @@
 package models.database;
 
-import config.Database;
+import config.MySql;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 public class MySQLConnect {
 	public static Connection getMySQLConnection() throws SQLException, ClassNotFoundException {
                 // Chú ý: Thay đổi các thông số kết nối cho phù hợp.
-                Database db = new Database();
+                MySql db = new MySql();
                 String hostName = db.get("host");
                 String dbName = db.get("DBName");
                 String userName = db.get("username");
